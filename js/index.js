@@ -73,6 +73,7 @@ $(function () {
                 i = 0;
             }
             $("#imagesLeft").fadeOut("slow", function () {
+                $("#imagesLeft").attr("src", "images/black.gif");
                 $("#imagesLeft").attr("src", media[i][0]);
                 $(this).fadeIn(media[i][1]);
             });
@@ -86,6 +87,7 @@ $(function () {
                 j = 10;
             }
             $("#imagesMiddle").fadeOut("slow", function () {
+                $("#imagesMiddle").attr("src", "images/black.gif");
                 $("#imagesMiddle").attr("src", media[j][0]);
                 $(this).fadeIn(media[j][1]);
             });
@@ -99,6 +101,7 @@ $(function () {
                 k = 19;
             }
             $("#imagesRight").fadeOut("slow", function () {
+                $("#imagesRight").attr("src", "images/black.gif");
                 $("#imagesRight").attr("src", media[k][0]);
                 $(this).fadeIn(media[k][1]);
             });
