@@ -1,0 +1,261 @@
+body {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	font-family: "Supernatural Knight", serif;
+}
+
+/* Portrait and Landscape */
+@media screen and (min-width: 300px) {
+  	.title {
+		padding-top: 2%;
+		padding-bottom: 3%;
+	}
+
+	.targetDiv, .imagesPanel, .tandc, .container img {
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.targetDiv, .imagesPanel, .tandc {
+		display: block;
+	}
+
+	.targetDiv {
+	    margin-top: 2%;
+		width: 90%;
+		height: 15%;
+		font-size: 65%;
+		padding-bottom: 2%;
+		background-color: #000;
+		box-shadow: 1px 2px 16px 3px #6b0303;
+		z-index: 1;
+	}
+
+	.spanz {
+		width: 100%;
+		padding-top: 5%;
+	}
+
+	.container {
+	    width: 50%;
+	    height: 75%;
+	}
+
+	.container img {
+		display: inline-block;
+	    width: 70%;
+	    height: auto;
+	}
+
+	.imagesPanel {
+		padding-top: 3%;
+		padding-bottom: 6%;
+		width: 90%;
+		height: 75%;
+	}
+
+	.tandc {
+		width: 90%;
+		height: auto;
+		position: fixed;
+		margin-top: 2%;
+	    padding-bottom: 25%;
+	}
+
+}
+
+@media screen and (min-width: 330px) {
+	.targetDiv {
+		font-size: 75%;
+		box-shadow: 1px 2px 20px 3px #6b0303;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.targetDiv {
+		font-size: 80%;
+		box-shadow: 1px 2px 24px 3px #6b0303;
+	}
+}
+
+@media screen and (min-width: 425px) {
+	.targetDiv {
+	    margin-top: 25%;
+		font-size: 90%;
+	}
+
+	.tandc {
+		margin-top: 5%;
+	}
+
+	.container {
+	    width: 90%;
+	    height: 75%;
+	}
+
+	.container img {
+		width: 33%;
+		float: left;
+	}
+
+	.imagesPanel {
+		padding-top: 5%;
+	}
+}
+
+@media screen and (min-width: 446px) {
+	.targetDiv {
+		font-size: 95%;
+		box-shadow: 1px 2px 28px 3px #6b0303;
+	}
+}
+
+@media screen and (min-width: 473px) {
+	.targetDiv {
+		font-size: 100%;
+	}
+}
+
+@media screen and (min-width: 497px) {
+	.targetDiv, .tandc {
+		width: 85%;
+	}
+
+	.tandc {
+		font-weight: bolder;
+	}
+}
+
+@media screen and (min-width: 525px) {
+	.targetDiv, .tandc {
+		width: 80%;
+	}
+
+	.targetDiv {
+		box-shadow: 1px 2px 32px 3px #6b0303;
+	}
+}
+
+@media screen and (min-width: 557px) {
+	.targetDiv, .tandc {
+		width: 75%;
+	}
+}
+
+@media screen and (min-width: 593px) {
+	.targetDiv, .tandc {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 634px) {
+	.container {
+	    width: 85%;
+	}
+
+	.targetDiv, .tandc {
+		width: 65%;
+	}
+}
+
+@media screen and (min-width: 682px) {
+	.targetDiv, .tandc {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 737px) {
+	.targetDiv, .tandc {
+		width: 55%;
+	}
+}
+
+@media screen and (min-width: 802px) {
+	.targetDiv {
+		width: 50%;
+		box-shadow: 1px 2px 36px 3px #6b0303;
+	}
+
+	.tandc {
+		width: 53%;
+	}
+}
+
+@media screen and (min-width: 881px) {
+	.targetDiv {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 966px) {
+	.title, .targetDiv {
+		font-size: 1.2em;
+	}
+	.targetDiv {
+		margin-top: 22%;
+	}
+}
+
+@media screen and (min-width: 1054px) {
+	.targetDiv {
+		font-size: 1.3em;
+		margin-top: 17%;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.targetDiv {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (min-width: 1156px) {
+	.container {
+	    width: 80%;
+	}
+
+	.container img {
+	    width: 30%;
+	}
+
+	#imagesMiddle {
+		padding-left: 5%;
+	}
+
+	#imagesRight {
+		float: right;
+	}
+	
+	.targetDiv {
+		font-size: 1em;
+	}
+
+	.title {
+		font-size: 1.5em;
+	}
+
+	.tandc {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 1171px) {
+	.title {
+		font-size: 1.7em;
+	}
+
+	.tandc {
+		font-size: 90%;
+	}
+}
+
+@media screen and (min-width: 1299px) {
+	.title {
+		font-size: 2em;
+	}
+
+	.tandc {
+		font-size: 100%;
+	}
+}
