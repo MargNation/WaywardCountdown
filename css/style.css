@@ -13,8 +13,8 @@ body {
 	}
 
 	.targetDiv, .imagesPanel, .tandc, .container img {
-	    	margin-left: auto;
-	    	margin-right: auto;
+		margin-left: auto;
+	    margin-right: auto;
 	}
 
 	.targetDiv, .imagesPanel, .tandc {
@@ -22,7 +22,7 @@ body {
 	}
 
 	.targetDiv {
-	    	margin-top: 2%;
+	    margin-top: 2%;
 		width: 90%;
 		height: 15%;
 		font-size: 65%;
@@ -30,6 +30,18 @@ body {
 		background-color: #000;
 		box-shadow: 1px 2px 16px 3px #6b0303;
 		z-index: 1;
+
+		-webkit-animation-name: boxShadowAni;
+    	-webkit-animation-duration: 5s;
+    	-webkit-animation-timing-function: ease-in-out;
+    	-webkit-animation-iteration-count: infinite;    
+    	-webkit-animation-play-state: running;
+    
+    	animation-name: boxShadowAni;
+    	animation-duration: 5s;
+    	animation-timing-function: ease-in-out;
+    	animation-iteration-count: infinite;    
+    	animation-play-state: running;
 	}
 
 	.spanz {
@@ -38,14 +50,14 @@ body {
 	}
 
 	.container {
-	    	width: 50%;
-	    	height: 75%;
+	    width: 50%;
+	    height: 75%;
 	}
 
 	.container img {
 		display: inline-block;
-	    	width: 70%;
-	    	height: auto;
+	    width: 70%;
+	    height: auto;
 	}
 
 	.imagesPanel {
@@ -60,7 +72,7 @@ body {
 		height: auto;
 		position: fixed;
 		margin-top: 2%;
-	    	padding-bottom: 25%;
+	    padding-bottom: 25%;
 	}
 
 }
@@ -68,20 +80,18 @@ body {
 @media screen and (min-width: 330px) {
 	.targetDiv {
 		font-size: 75%;
-		box-shadow: 1px 2px 20px 3px #6b0303;
 	}
 }
 
 @media screen and (min-width: 375px) {
 	.targetDiv {
 		font-size: 80%;
-		box-shadow: 1px 2px 24px 3px #6b0303;
 	}
 }
 
 @media screen and (min-width: 425px) {
 	.targetDiv {
-	    	margin-top: 25%;
+	    margin-top: 25%;
 		font-size: 90%;
 	}
 
@@ -90,8 +100,8 @@ body {
 	}
 
 	.container {
-	    	width: 90%;
-	    	height: 75%;
+	    width: 90%;
+	    height: 75%;
 	}
 
 	.container img {
@@ -107,7 +117,6 @@ body {
 @media screen and (min-width: 446px) {
 	.targetDiv {
 		font-size: 95%;
-		box-shadow: 1px 2px 28px 3px #6b0303;
 	}
 }
 
@@ -131,10 +140,6 @@ body {
 	.targetDiv, .tandc {
 		width: 80%;
 	}
-
-	.targetDiv {
-		box-shadow: 1px 2px 32px 3px #6b0303;
-	}
 }
 
 @media screen and (min-width: 557px) {
@@ -151,7 +156,7 @@ body {
 
 @media screen and (min-width: 634px) {
 	.container {
-	    	width: 85%;
+	    width: 85%;
 	}
 
 	.targetDiv, .tandc {
@@ -174,7 +179,6 @@ body {
 @media screen and (min-width: 802px) {
 	.targetDiv {
 		width: 50%;
-		box-shadow: 1px 2px 36px 3px #6b0303;
 	}
 
 	.tandc {
@@ -258,4 +262,16 @@ body {
 	.tandc {
 		font-size: 100%;
 	}
+}
+
+@-webkit-keyframes boxShadowAni {
+    0%     {box-shadow: 1px 2px 32px 3px #000000;}
+    50%  {box-shadow: 1px 2px 32px 3px #6b0303;}
+    100%  {box-shadow: 1px 2px 32px 3px #000000;}
+}
+
+@keyframes boxShadowAni {
+    0%     {box-shadow: 1px 2px 32px 3px #000000;}
+    50%  {box-shadow: 1px 2px 32px 3px #6b0303;}
+    100%  {box-shadow: 1px 2px 32px 3px #000000;}
 }
