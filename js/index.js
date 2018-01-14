@@ -32,28 +32,36 @@ var mainTimer = setInterval(function() {
     }
 }, 1000);
 
-var media = [["images/24301089_10214621198461212_6290583770791622947_n.jpg", random(2000, 4000)],
-            ["images/kimBriInCar.gif", random(2000, 4000)],
-            ["images/briana1.jpg", random(1000, 4000)], 
-            ["images/brianaPromo.jpg", random(1000, 4000)], 
-            ["images/clark1.jpg", random(1000, 4000)], 
-            ["images/clarkKat.jpg", random(1000, 4000)], 
-            ["images/kat1.jpg", random(1000, 4000)], 
-            ["images/kat2.jpg", random(1000, 4000)], 
-            ["images/kim1.jpg", random(1000, 4000)], 
-            ["images/kimBriana.jpg", random(1000, 4000)], 
-            ["images/kimPromo.jpg", random(1000, 4000)], 
-            ["images/newton1.jpg", random(1000, 4000)], 
-            ["images/newton2.jpg", random(1000, 4000)], 
-            ["images/newtonKim.jpg", random(1000, 4000)], 
-            ["images/newtonYadi.jpg", random(1000, 4000)], 
+var media = [["images/24301089_10214621198461212_6290583770791622947_n.jpg", random(1000, 4000)],
+            ["images/alexLeaving.gif", random(1000, 2000)], 
+            ["images/claireHospital.gif", random(1000, 2000)],
+            ["images/alex2.jpg", random(1000, 4000)],  
+            ["images/patience1.jpg", random(1000, 4000)], 
+            ["images/jodyPossessed.gif", random(1000, 2000)], 
+            ["images/kaia1.jpg", random(1000, 4000)], 
+            ["images/claire1.jpg", random(1000, 4000)], 
             ["images/three.jpg", random(1000, 4000)], 
-            ["images/yadi1.jpg", random(1000, 4000)], 
-            ["images/yadiNewton.jpg", random(1000, 4000)], 
-            ["images/kaiaMonster.gif", random(2000, 4000)], 
-            ["images/kimBriRunning.gif", random(2000, 3000)],
-            ["images/claireGif.gif", random(2000, 4000)],
-            ["images/kimBriPatienceAlex.gif", random(2000, 4000)]]
+            ["images/jody1.jpg", random(1000, 4000)],
+            ["images/claireShotgun.gif", random(1000, 2000)],
+            ["images/patienceAlex.jpg", random(1000, 4000)],
+            ["images/jodyPromo.jpg", random(1000, 4000)], 
+            ["images/donna1.jpg", random(1000, 4000)],
+            ["images/allFourShoot.gif", random(1000, 2000)],
+            ["images/claireKaia.jpg", random(1000, 4000)], 
+            ["images/patienceTalking.gif", random(1000, 2000)], 
+            ["images/jodyDonnaCar.gif", random(1000, 2000)],
+            ["images/claire2.jpg", random(1000, 4000)],
+            ["images/alex1.jpg", random(1000, 4000)],  
+            ["images/alexClaireDinner.gif", random(1000, 2000)],
+            ["images/jodyDonnaRunning.gif", random(1000, 2000)],
+            ["images/donnaPlush.gif", random(1000, 2000)],
+            ["images/claireLeaving.gif", random(1000, 2000)],
+            ["images/claireJody.jpg", random(1000, 4000)], 
+            ["images/patienceIntro.gif", random(1000, 2000)], 
+            ["images/jodyDonna.jpg", random(1000, 4000)], 
+            ["images/alexIntro.gif", random(1000, 2000)],
+            ["images/donnaPromo.jpg", random(1000, 4000)], 
+            ["images/kaiaClaire.jpg", random(1000, 4000)]]
 
 
 $(function () {
@@ -61,7 +69,7 @@ $(function () {
         $("#imagesLeft").css("src", media[i][0]);
         setInterval(function () {
             i++;
-            if (i >= media.length) {
+            if (i == 10) {
                 i = 0;
             }
             $("#imagesLeft").fadeOut("slow", function () {
@@ -70,12 +78,12 @@ $(function () {
             });
         }, random(2000, 4500));
 
-        var j = 3;
+        var j = 10;
         $("#imagesMiddle").css("src", media[j][0]);
         setInterval(function () {
             j++;
-            if (j >= media.length) {
-                j = 3;
+            if (j == 20) {
+                j = 10;
             }
             $("#imagesMiddle").fadeOut("slow", function () {
                 $("#imagesMiddle").attr("src", media[j][0]);
@@ -83,12 +91,12 @@ $(function () {
             });
         }, random(2000, 4500));
 
-        var k = 6;
+        var k = 20;
         $("#imagesRight").css("src", media[k][0]);
         setInterval(function () {
             k++;
-            if (k >= media.length) {
-                k = 6;
+            if (k == media.length) {
+                k = 19;
             }
             $("#imagesRight").fadeOut("slow", function () {
                 $("#imagesRight").attr("src", media[k][0]);
