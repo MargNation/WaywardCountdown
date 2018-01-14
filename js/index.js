@@ -95,8 +95,6 @@ $(function () {
                 $(this).fadeIn(media[k][1]);
             });
         }, random(2000, 4500));
-        document.getElementById("tc").innerHTML = "Use the following hashtags in all social media:\
-                                                    #Supernatural #WaywardSisters";
     });
 
 function random(min, max) {
