@@ -229,6 +229,7 @@ body {
 	
 	.targetDiv {
 		font-size: 1em;
+		background-color: #0f0;
 	}
 
 	.title {
@@ -253,7 +254,6 @@ body {
 @media screen and (min-width: 1299px) {
 	.title {
 		font-size: 2em;
-		color: #f00;
 	}
 
 	.tandc {
