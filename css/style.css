@@ -213,6 +213,7 @@ body {
 @media screen and (min-width: 1156px) {
 	.container {
 	    width: 80%;
+	    background-color: #0f0;
 	}
 
 	.container img {
@@ -229,7 +230,6 @@ body {
 	
 	.targetDiv {
 		font-size: 1em;
-		background-color: #0f0;
 	}
 
 	.title {
