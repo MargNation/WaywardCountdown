@@ -97,6 +97,8 @@ $(function () {
         }, random(2000, 4500));
     });
 
+// document.getElementById("target").innerHTML = window.innerWidth + " x " + window.innerHeight;
+
 function random(min, max) {
 	return Math.floor(Math.random() * (max - min) + min);
 };
