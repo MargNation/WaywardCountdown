@@ -268,12 +268,12 @@ body {
 
 @-webkit-keyframes boxShadowAni {
     0%     {box-shadow: 1px 2px 32px 3px #000000;}
-    50%  {box-shadow: 1px 2px 32px 3px #6b0303;}
+    50%  {box-shadow: 1px 2px 32px 13px #6b0303;}
     100%  {box-shadow: 1px 2px 32px 3px #000000;}
 }
 
 @keyframes boxShadowAni {
     0%     {box-shadow: 1px 2px 32px 3px #000000;}
-    50%  {box-shadow: 1px 2px 32px 3px #6b0303;}
+    50%  {box-shadow: 1px 2px 32px 13px #6b0303;}
     100%  {box-shadow: 1px 2px 32px 3px #000000;}
 }
