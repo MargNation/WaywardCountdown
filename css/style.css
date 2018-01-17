@@ -268,12 +268,17 @@ body {
 
 @-webkit-keyframes boxShadowAni {
     0%     {box-shadow: 1px 2px 32px 3px #000000;}
-    50%  {box-shadow: 1px 2px 32px 23px #6b0303;}
+    50%  {box-shadow: 1px 2px 32px 33px #6b0303;}
     100%  {box-shadow: 1px 2px 32px 3px #000000;}
 }
 
 @keyframes boxShadowAni {
     0%     {box-shadow: 1px 2px 32px 3px #000000;}
-    50%  {box-shadow: 1px 2px 32px 23px #6b0303;}
+    50%  {box-shadow: 1px 2px 32px 33px #6b0303;}
     100%  {box-shadow: 1px 2px 32px 3px #000000;}
 }
+
+/*13px - Sunday night
+23px - Monday night
+33px - Tuesday night
+43px - Wednesday night*/
