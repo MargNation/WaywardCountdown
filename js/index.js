@@ -29,7 +29,21 @@ var mainTimer = setInterval(function() {
         document.getElementById("hoursLeft").innerHTML = 0;
         document.getElementById("minutesLeft").innerHTML = 0;
         document.getElementById("secondsLeft").innerHTML = 0;
+        var currentOpacity = 0;
+        var changeOpacity = setInterval(function() {
+            if (currentOpacity < 1) {
+                document.getElementById("redirectMessage").style.opacity = currentOpacity;
+                document.getElementById("mainTitle").style.opacity = currentOpacity;
+                document.getElementById("mainTitle").innerHTML = "Wayward Sisters Is Here!";
+                document.getElementById("redirectMessage").innerHTML = "<br>---stand by to be redirected to www.cwtv.com---";
+                currentOpacity += 0.01;
+            }
+        }, 30);
+        setTimeout(function() {
+            document.location.href = "http://www.cwtv.com/shows/supernatural/";
+        }, 10000);
     }
+
 }, 1000);
 
 var media = [["images/24301089_10214621198461212_6290583770791622947_n.jpg", random(1000, 4000)],
@@ -81,7 +95,7 @@ $(function () {
                 $(this).fadeIn(media[i][1]);
             });
             i++;
-        }, random(3000, 5000));
+        }, random(1500, 5000));
 
         var j = 11;
         setInterval(function () {
@@ -95,7 +109,7 @@ $(function () {
                 $(this).fadeIn(media[j][1]);
             });
             j++;
-        }, random(2000, 4500));
+        }, random(1500, 5000));
 
         var k = 22;
         setInterval(function () {
@@ -109,7 +123,7 @@ $(function () {
                 $(this).fadeIn(media[k][1]);
             });
             k++;
-        }, random(3000, 5000));
+        }, random(1500, 5000));
     });
 
 // document.getElementById("target").innerHTML = window.innerWidth + " x " + window.innerHeight;
