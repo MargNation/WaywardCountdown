@@ -33,79 +33,83 @@ var mainTimer = setInterval(function() {
 }, 1000);
 
 var media = [["images/24301089_10214621198461212_6290583770791622947_n.jpg", random(1000, 4000)],
-            ["images/alexLeaving.gif", random(1000, 2000)], 
-            ["images/claireHospital.gif", random(1000, 2000)],
+            ["images/alexLeaving.gif", random(500, 1000)], 
+            ["images/claireHospital.gif", random(500, 1000)],
             ["images/alex2.jpg", random(1000, 4000)],  
             ["images/patience1.jpg", random(1000, 4000)], 
-            ["images/jodyPossessed.gif", random(1000, 2000)], 
+            ["images/claireFlamethrower.gif", random(500, 1000)], 
+            ["images/jodyPossessed.gif", random(500, 1000)], 
             ["images/kaia1.jpg", random(1000, 4000)], 
             ["images/claire1.jpg", random(1000, 4000)], 
             ["images/three.jpg", random(1000, 4000)], 
             ["images/jody1.jpg", random(1000, 4000)],
-            ["images/claireShotgun.gif", random(1000, 2000)],
-            ["images/patienceAlex.jpg", random(1000, 4000)],
+            ["images/allShooting.gif", random(500, 1000)], 
+            ["images/claireShotgun.gif", random(500, 1000)],
+            ["images/patienceAlex.jpg", random(500, 4000)],
             ["images/jodyPromo.jpg", random(1000, 4000)], 
             ["images/donna1.jpg", random(1000, 4000)],
-            ["images/allFourShoot.gif", random(1000, 2000)],
+            ["images/allFourShoot.gif", random(500, 1000)],
             ["images/claireKaia.jpg", random(1000, 4000)], 
-            ["images/patienceTalking.gif", random(1000, 2000)], 
-            ["images/jodyDonnaCar.gif", random(1000, 2000)],
+            ["images/patienceTalking.gif", random(500, 1000)], 
+            ["images/jodyDonnaCar.gif", random(500, 1000)],
             ["images/claire2.jpg", random(1000, 4000)],
             ["images/alex1.jpg", random(1000, 4000)],  
-            ["images/alexClaireDinner.gif", random(1000, 2000)],
-            ["images/jodyDonnaRunning.gif", random(1000, 2000)],
-            ["images/donnaPlush.gif", random(1000, 2000)],
-            ["images/claireLeaving.gif", random(1000, 2000)],
+            ["images/donnaMinnesota.gif", random(500, 1000)], 
+            ["images/alexClaireDinner.gif", random(500, 1000)],
+            ["images/jodyDonnaRunning.gif", random(500, 1000)],
+            ["images/donnaPlush.gif", random(500, 1000)],
+            ["images/claireLeaving.gif", random(500, 1000)],
             ["images/claireJody.jpg", random(1000, 4000)], 
-            ["images/patienceIntro.gif", random(1000, 2000)], 
+            ["images/patienceIntro.gif", random(500, 1000)], 
+            ["images/donnaHiya.gif", random(500, 1000)], 
             ["images/jodyDonna.jpg", random(1000, 4000)], 
-            ["images/alexIntro.gif", random(1000, 2000)],
-            ["images/donnaPromo.jpg", random(1000, 4000)], 
+            ["images/alexIntro.gif", random(500, 1000)],
+            ["images/jodyClairePhone.gif", random(500, 1000)], 
             ["images/kaiaClaire.jpg", random(1000, 4000)]]
 
 
 $(function () {
         var i = 0;
-        $("#imagesLeft").css("src", media[i][0]);
         setInterval(function () {
-            i++;
-            if (i == 10) {
+            if (i == 11) {
                 i = 0;
             }
+            $("#imagesLeft").css("src", media[i][0]);
             $("#imagesLeft").fadeOut("slow", function () {
                 $("#imagesLeft").attr("src", "images/black.gif");
                 $("#imagesLeft").attr("src", media[i][0]);
                 $(this).fadeIn(media[i][1]);
             });
-        }, random(2000, 4500));
+            i++;
+        }, random(3000, 5000));
 
-        var j = 10;
-        $("#imagesMiddle").css("src", media[j][0]);
+        var j = 11;
         setInterval(function () {
-            j++;
-            if (j == 20) {
-                j = 10;
+            if (j == 22) {
+                j = 11;
             }
+            $("#imagesMiddle").css("src", media[j][0]);
             $("#imagesMiddle").fadeOut("slow", function () {
                 $("#imagesMiddle").attr("src", "images/black.gif");
                 $("#imagesMiddle").attr("src", media[j][0]);
                 $(this).fadeIn(media[j][1]);
             });
+            j++;
         }, random(2000, 4500));
 
-        var k = 20;
-        $("#imagesRight").css("src", media[k][0]);
+        var k = 22;
         setInterval(function () {
-            k++;
-            if (k == media.length) {
-                k = 19;
+            if (k == media.length - 1) {
+                k = 22;
             }
+            $("#imagesRight").css("src", media[k][0]);
             $("#imagesRight").fadeOut("slow", function () {
                 $("#imagesRight").attr("src", "images/black.gif");
                 $("#imagesRight").attr("src", media[k][0]);
                 $(this).fadeIn(media[k][1]);
             });
-        }, random(2000, 4500));
+            k++;
+        }, random(3000, 5000));
     });
 
 // document.getElementById("target").innerHTML = window.innerWidth + " x " + window.innerHeight;
